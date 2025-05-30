@@ -1,0 +1,19 @@
+* {
+  font-family: 'Open Sauce One', sans-serif !important;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit !important;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #f5f3f3;
+}

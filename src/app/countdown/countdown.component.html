@@ -1,0 +1,55 @@
+<div class="countdown-container">
+  <h1 class="title">Time to {{ currentEventTitle }}</h1>
+
+  <div *ngIf="countdown$ | async as time" class="time-display">
+    {{ time.days }} days, {{ time.hours }} h, {{ time.minutes }}m,
+    {{ time.seconds }}s
+  </div>
+
+  <div class="input-group">
+    <div class="input-field">
+      <label for="titleInput" class="text">Title</label>
+      <input
+        type="text"
+        id="titleInput"
+        [(ngModel)]="inputEventTitle"
+        (input)="checkTitleInput()"
+        placeholder="e.g. Midsummer Eve"
+        class="input"
+        pattern="[a-zA-Z0-9\s]*"
+        title="Only letters, and numbers allowed"
+      />
+    </div>
+
+    <div class="date-time-group">
+      <div class="input-field">
+        <label for="dateInput" class="text">Date</label>
+        <input
+          type="date"
+          id="dateInput"
+          [(ngModel)]="inputEventDate"
+          class="input"
+        />
+      </div>
+
+      <div class="input-field">
+        <label for="timeInput" class="text">Time</label>
+        <input
+          type="time"
+          id="timeInput"
+          [(ngModel)]="inputEventTime"
+          class="input"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <button (click)="updateCountdown()" class="update-btn">
+      Update Countdown
+    </button>
+  </div>
+  <div *ngIf="alert.show" class="alert">
+    {{ alert.message }}
+  </div>
+</div>
