@@ -16,14 +16,14 @@ Angular-based countdown timer that displays the remaining time until your specia
 - View the app: https://glowing-sunflower-577fee.netlify.app/
 
 # Clone the repository
-
 git clone https://github.com/your-username/countdown-timer-app.git
 
 # Install dependencies
-
 npm install
 
 # Launch development server
-
 - ng serve
 - open your browser at http://localhost:4200
+
+# Test
+- ng test
