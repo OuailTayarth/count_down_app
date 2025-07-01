@@ -1,9 +1,6 @@
-# Countdown Timer App | Test | Natural Cycles
+# Countdown Timer App
 
 Angular-based countdown timer that displays the remaining time until your special event. Set custom titles and future dates to track important moments.
-
-**A Quick Note**  
-I’m more experienced with React, but I enjoyed diving into Angular during this test and learning something new and excited to keep growing with it!
 
 <a href="https://ibb.co/NggDydv0"><img src="https://i.ibb.co/qLLqr3SH/Landing-page.png" alt="Landing-page" border="0"></a>
 
