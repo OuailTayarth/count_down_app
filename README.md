@@ -21,6 +21,9 @@ Angular-based countdown timer that displays the remaining time until your specia
 - User accounts to manage multiple countdowns and notification preferences
 - A utility page with stopwatch, clock, and alarm
 
+## Technologies
+- **Front-end**: Angular, TypeScript
+
 # Clone the repository
 git clone https://github.com/your-username/countdown-timer-app.git
 
